@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/dimen30"
+    android:paddingHorizontal="@dimen/dimen25">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimen20"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/dimen150"
+            android:layout_height="@dimen/dimen180"
+            android:background="@drawable/ic_welcome_parent"
+            android:layout_marginBottom="@dimen/dimen10"
+            android:contentDescription="@string/parent_welcome_image_content_desc" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instruct_input"
+            android:textAlignment="center"
+            android:paddingHorizontal="@dimen/dimen30"
+            android:textSize="@dimen/font18"
+            android:fontFamily="@font/nunito_semibold"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_panggilan_anak_txt"
+        android:textSize="@dimen/font16"
+        android:textColor="@color/colorBlack"/>
+    <EditText
+        android:id="@+id/nama_anak_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nama_panggilan_anak_hint"
+        style="@style/CustomEdt"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jenis_kelamin_txt"
+        android:textSize="@dimen/font16"
+        android:textColor="@color/colorBlack"
+        android:layout_marginBottom="@dimen/dimen10"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dimen10">
+        <RadioButton android:id="@+id/radio_laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/laki_laki_opt"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <RadioButton android:id="@+id/radio_perem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perempuan_opt"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height= "@dimen/dimen1"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="@dimen/dimen10"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/umur_txt"
+        android:textSize="@dimen/font16"
+        android:textColor="@color/colorBlack"/>
+    <EditText
+        android:id="@+id/umur_edt"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/umur_hint"
+        style="@style/CustomEdt" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font12"
+        android:textColor="@color/colorBlack"
+        android:text="@string/note_txt"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen30"/>
+    <Button
+        android:id="@+id/daftar_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/daftar_btn_txt"
+        android:paddingVertical="@dimen/dimen12"
+        style="@style/CustomButton"/>
+
+</LinearLayout>

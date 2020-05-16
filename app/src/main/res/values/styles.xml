@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/rubik_regular</item>
+    </style>
+
+    <style name="CustomEdt" parent="Widget.AppCompat.EditText">
+        <item name="android:paddingBottom">@dimen/dimen25</item>
+        <item name="android:textSize">@dimen/font14</item>
+    </style>
+
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_btn</item>
+        <item name="android:textSize">@dimen/dimen20</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+    </style>
+    <style name="GreenOutline">
+        <item name="android:background">@drawable/outline_bg</item>
+        <item name="android:textSize">@dimen/dimen30</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/nunito_extrabold</item>
+    </style>
+</resources>
